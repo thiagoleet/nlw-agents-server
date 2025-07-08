@@ -13,12 +13,15 @@
   "type": "module",
   "description": "",
   "dependencies": {
-    "@biomejs/biome": "^2.1.1",
     "@fastify/cors": "^11.0.1",
     "@types/node": "^24.0.11",
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.2",
     "typescript": "^5.8.3",
     "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "ultracite": "5.0.32"
   }
 }
