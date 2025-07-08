@@ -1,0 +1,23 @@
+{
+  "name": "nlw-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
+    "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@types/node": "^24.0.11",
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.2",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.76"
+  }
+}
