@@ -33,14 +33,14 @@ export const getRoomQuestionsRoute: FastifyPluginCallbackZod = (app) => {
         return reply.status(404).send({
           data: [],
           message: "No questions found for this room",
-          count: 0,
+          total: 0,
         });
       }
 
       return {
         data: results,
         message: "Questions retrieved successfully",
-        count: results.length,
+        total: results.length,
       };
     }
   );
