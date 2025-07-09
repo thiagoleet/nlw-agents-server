@@ -9,3 +9,21 @@
 - 💡 Always learning.
 - ⚙️ Contact me on [LinkedIn](https://www.linkedin.com/in/thiagofmleite/)
 - 🚶‍♂️Follow me on [Twitter](https://twitter.com/thiagoleite), [Instagram](https://instagram.com/thiagoleet) and [Twitch](https://twitch.tv/thiagoleet).
+
+## Setting up the project
+
+### Init Docker
+
+- Run `docker compose up`
+
+### To generate migrations
+
+- Run `npx drizzle-kit generate`
+
+### To run migrations
+
+- Run `npx drizzle-kit migrate`
+
+### Seeding values
+
+- Run `npm run db:seed`

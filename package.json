@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
     "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:seed": "node --env-file .env --experimental-strip-types --no-warnings src/db/seed.ts"
   },
   "keywords": [],
   "author": "",
