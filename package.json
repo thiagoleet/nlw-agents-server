@@ -25,6 +25,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
     "drizzle-kit": "^0.31.4",
+    "drizzle-seed": "^0.3.1",
     "ultracite": "5.0.32"
   }
 }
