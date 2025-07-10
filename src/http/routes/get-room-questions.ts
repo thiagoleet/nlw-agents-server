@@ -30,18 +30,10 @@ export const getRoomQuestionsRoute: FastifyPluginCallbackZod = (app) => {
         .orderBy(desc(schema.questions.createdAt));
 
       if (results.length === 0) {
-        return reply.status(404).send({
-          items: [],
-          message: "No questions found for this room",
-          total: 0,
-        });
+        return reply.status(404).send([]);
       }
 
-      return {
-        items: results,
-        message: "Questions retrieved successfully",
-        total: results.length,
-      };
+      return results;
     }
   );
 };
